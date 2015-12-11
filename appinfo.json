@@ -1,0 +1,49 @@
+{
+    "appKeys": {},
+    "capabilities": [
+        ""
+    ],
+    "companyName": "[pxl] digital",
+    "longName": "Thick Tick",
+    "projectType": "native",
+    "resources": {
+        "media": [
+            {
+                "characterRegex": "[0-9]",
+                "file": "fonts/OpenSans-Bold.ttf",
+                "name": "FONT_OPEN_SANS_BOLD_48",
+                "type": "font"
+            },
+            {
+                "characterRegex": "[0-9]",
+                "file": "fonts/OpenSans-Bold.ttf",
+                "name": "FONT_OPEN_SANS_BOLD_40",
+                "type": "font"
+            },
+            {
+                "characterRegex": "[0-9]",
+                "file": "fonts/OpenSans-Light.ttf",
+                "name": "FONT_OPEN_SANS_LIGHT_48",
+                "type": "font"
+            },
+            {
+                "characterRegex": "[0-9]",
+                "file": "fonts/OpenSans-Light.ttf",
+                "name": "FONT_OPEN_SANS_LIGHT_40",
+                "type": "font"
+            }
+        ]
+    },
+    "sdkVersion": "3",
+    "shortName": "Thick Tick",
+    "targetPlatforms": [
+        "aplite",
+        "basalt",
+        "chalk"
+    ],
+    "uuid": "19ce3055-260c-4ff5-b5c1-70c91ae65afe",
+    "versionLabel": "0.1",
+    "watchapp": {
+        "watchface": true
+    }
+}
