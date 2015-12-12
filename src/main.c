@@ -77,11 +77,11 @@ static void main_window_load(Window *window) {
 	
   text_layer_set_text_alignment(s_minutes_layer, GTextAlignmentCenter);
 
-  s_connection_layer = text_layer_create(GRect(0, 20, bounds.size.w, 34));
+  s_connection_layer = text_layer_create(GRect(0, 0, bounds.size.w, 34));
   text_layer_set_text_color(s_connection_layer, GColorWhite);
   text_layer_set_background_color(s_connection_layer, GColorClear);
   text_layer_set_font(s_connection_layer, fonts_get_system_font(FONT_KEY_GOTHIC_18));
-  text_layer_set_text_alignment(s_connection_layer, GTextAlignmentCenter);
+  text_layer_set_text_alignment(s_connection_layer, GTextAlignmentLeft);
 	
   s_date_layer = text_layer_create(GRect(0, 130, bounds.size.w, 34));
   text_layer_set_text_color(s_date_layer, GColorWhite);
@@ -95,11 +95,11 @@ static void main_window_load(Window *window) {
   handle_bluetooth(connection_service_peek_pebble_app_connection());
 #endif
 
-  s_battery_layer = text_layer_create(GRect(0, 30, bounds.size.w, 34));
+  s_battery_layer = text_layer_create(GRect(0, 0, bounds.size.w, 34));
   text_layer_set_text_color(s_battery_layer, GColorWhite);
   text_layer_set_background_color(s_battery_layer, GColorClear);
   text_layer_set_font(s_battery_layer, fonts_get_system_font(FONT_KEY_GOTHIC_18));
-  text_layer_set_text_alignment(s_battery_layer, GTextAlignmentCenter);
+  text_layer_set_text_alignment(s_battery_layer, GTextAlignmentRight);
   text_layer_set_text(s_battery_layer, "100% charged");
 
   // Ensures time is displayed immediately (will break if NULL tick event accessed).
