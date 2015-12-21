@@ -11,25 +11,15 @@
             {
                 "characterRegex": "[0-9]",
                 "file": "fonts/OpenSans-Bold.ttf",
-                "name": "FONT_OPEN_SANS_BOLD_48",
-                "type": "font"
-            },
-            {
-                "characterRegex": "[0-9]",
-                "file": "fonts/OpenSans-Bold.ttf",
-                "name": "FONT_OPEN_SANS_BOLD_40",
+                "name": "FONT_OPEN_SANS_BOLD_60",
+                "targetPlatforms": null,
                 "type": "font"
             },
             {
                 "characterRegex": "[0-9]",
                 "file": "fonts/OpenSans-Light.ttf",
-                "name": "FONT_OPEN_SANS_LIGHT_48",
-                "type": "font"
-            },
-            {
-                "characterRegex": "[0-9]",
-                "file": "fonts/OpenSans-Light.ttf",
-                "name": "FONT_OPEN_SANS_LIGHT_40",
+                "name": "FONT_OPEN_SANS_LIGHT_60",
+                "targetPlatforms": null,
                 "type": "font"
             }
         ]

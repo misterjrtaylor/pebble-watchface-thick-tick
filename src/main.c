@@ -8,8 +8,8 @@ static TextLayer *s_hours_layer;
 static TextLayer *s_minutes_layer;
 static TextLayer *s_date_layer;
 
-static GFont s_font_light_48;
-static GFont s_font_bold_48;
+static GFont s_font_light_60;
+static GFont s_font_bold_60;
 
 static void handle_battery(BatteryChargeState charge_state) {
   static char battery_text[] = "100% charged";
@@ -51,11 +51,11 @@ static void main_window_load(Window *window) {
   Layer *window_layer = window_get_root_layer(window);
   GRect bounds = layer_get_frame(window_layer);
 	
-  int fontHeight = 48;
+  int fontHeight = 60;
   int gap = 3;
   int offset = 12;
 	
-  s_hours_layer = text_layer_create(GRect(0, (bounds.size.h - (2 * fontHeight + gap) ) / 2 ,bounds.size.w,48));
+  s_hours_layer = text_layer_create(GRect(0, (bounds.size.h - (2 * fontHeight + gap) ) / 2 ,bounds.size.w,60));
   #if defined(PBL_SDK_2)
 	text_layer_set_text_color(s_hours_layer, GColorWhite);
   #elif defined(PBL_SDK_3)
@@ -63,8 +63,8 @@ static void main_window_load(Window *window) {
   #endif
   text_layer_set_background_color(s_hours_layer, GColorClear);
 	
-  s_font_bold_48 = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FONT_OPEN_SANS_BOLD_48));
-  text_layer_set_font(s_hours_layer, s_font_bold_48);
+  s_font_bold_60 = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FONT_OPEN_SANS_BOLD_60));
+  text_layer_set_font(s_hours_layer, s_font_bold_60);
 	
   text_layer_set_text_alignment(s_hours_layer, GTextAlignmentCenter);
 	
@@ -72,8 +72,8 @@ static void main_window_load(Window *window) {
   text_layer_set_text_color(s_minutes_layer, GColorWhite);
   text_layer_set_background_color(s_minutes_layer, GColorClear);
 	
-  s_font_light_48 = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FONT_OPEN_SANS_LIGHT_48));
-  text_layer_set_font(s_minutes_layer, s_font_light_48);
+  s_font_light_60 = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FONT_OPEN_SANS_LIGHT_60);
+  text_layer_set_font(s_minutes_layer, s_font_light_60);
 	
   text_layer_set_text_alignment(s_minutes_layer, GTextAlignmentCenter);
 
@@ -140,8 +140,8 @@ static void main_window_unload(Window *window) {
   text_layer_destroy(s_minutes_layer);
   text_layer_destroy(s_connection_layer);
   text_layer_destroy(s_battery_layer);
-  fonts_unload_custom_font(s_font_bold_48);
-  fonts_unload_custom_font(s_font_light_48);
+  fonts_unload_custom_font(s_font_bold_60);
+  fonts_unload_custom_font(s_font_light_60);
 }
 
 static void init() {
